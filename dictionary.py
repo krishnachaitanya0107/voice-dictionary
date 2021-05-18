@@ -1,9 +1,9 @@
 import json
 from difflib import get_close_matches
 import pyttsx3
-#import speech_recognition as sr
+import datetime
 
-data = json.load(open("C:\\Users\\K555L\\Downloads\\python reqs\\original\\data.json"))
+data = json.load(open("data.json"))
 print("\t\t\t\t DICTIONARY")
 engine=pyttsx3.init('sapi5')
 voices=engine.getProperty('voices')
@@ -12,6 +12,18 @@ engine.setProperty('voice',voices[0].id)
 def speak(audio):
       engine.say(audio)
       engine.runAndWait()
+
+def wishMe():
+      hour=int(datetime.datetime.now().hour)
+      if hour>=6 and hour<12:
+            speak("Good Morning!!")
+      elif hour>=12 and hour<=17:
+            speak("Good Afternoon!!")
+      elif hour>17 and hour<=20:
+            speak("Good Evening!!")
+      else :
+            speak("Good Night!!")
+      speak("It's so good to see you!! ")
       
 def translate(w):
     w = w.lower()
@@ -33,6 +45,7 @@ def translate(w):
     else:
         return "Sorry , The word doesn't exist. Please double check it."
 end=False
+wishMe()
 while end==False:
     speak("What do you wish to search for? : ")
     word = input("What do you wish to search for? : ")
@@ -56,3 +69,4 @@ while end==False:
         end=True
     else:
         end=True
+
