@@ -16,6 +16,5 @@ A User friendly dictionary in which users can search for a word and get the mean
 - python libraries like pyttsx3 , datetime , difflib and json
 
 # Credits
-I would like to thank Mr Ardit sulce for teaching me how to make this project and 
-also for inspiring me to make upgrades on this project as well . 
+I would like to thank Mr Ardit sulce for inspiring me to make this project .
 You can check out his python course on udemy [here](https://www.udemy.com/course/the-python-mega-course/)  
