@@ -11,9 +11,9 @@ A User friendly dictionary in which users can search for a word and get the mean
   ( by saying good morning , good evening etc according to the time )
 
 # Tech / Frameworks used
-- python
-- json file which contains data required for the dictionary
-- python libraries like pyttsx3 , datetime , difflib and json
+- Python
+- Json file which contains data required for the dictionary
+- Python libraries like pyttsx3 , datetime , difflib and json
 
 # Credits
 I would like to thank Mr Ardit sulce for inspiring me to make this project .
